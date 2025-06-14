@@ -2,11 +2,7 @@
 
 <div align="center">
   <h3><b>Hello SJA Pathway</b></h3>
-
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 
