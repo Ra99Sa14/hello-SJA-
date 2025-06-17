@@ -4,28 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SJA Pathway - Job Search Portal</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-      <div class="logo-container">
-<img
-  class="logo-image"
-  src="icon.jpg"
-  alt="SJA Pathway" >
-
+<header>
+  <div class="logo-container">
+    <img
+      class="logo-image"
+      src="icon.jpg"
+      alt="SJA Pathway">
     <h1>SJA Pathway</h1>
-      </div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="auth">
+    <button class="btn sign-up" onclick="location.href='#signup'">Sign Up</button>
+    <button class="btn sign-in" onclick="location.href='#signin'">Sign In</button>
+  </div>
+</header>
 
   <main>
     <section class="hero">
@@ -60,27 +68,147 @@
         </div>
       </article>
     </section>
+<section class="courses-section">
+  <h2>Internship Program</h2>
+  <p>Find the experience you need with an internship opportunity along with job support. Choose a plan that fits your goals!</p>
 
-    <section class="details-section">
-      <h2>Why Choose SJA Pathway?</h2>
-      <div class="container">
-        <p>At SJA Pathway, we are dedicated to empowering job seekers and career changers by providing tailored resources, up-to-date job listings, and expert guidance that align with your unique career goals.</p>
-        <p>Our platform bridges the gap between skills and opportunity by offering:</p>
-        <ul>
-          <li>Comprehensive career counseling and mentorship</li>
-          <li>Access to exclusive job listings with trusted employers</li>
-          <li>Ongoing skill development programs to keep you competitive</li>
-          <li>User-friendly tools and resources to simplify your job search</li>
-        </ul>
-        <p>Join thousands of satisfied users who have advanced their careers with SJA Pathway’s proven methods and support.</p>
+  <div class="courses">
+    <div class="course-item">
+      <h3>Starter</h3>
+      <p>(Ideal if you’re just starting out and want solid programming basics with guidance)</p>
+      <span>$10 <small>/ per month</small></span>
+      <ul>
+        <li>✔ Learn the fundamentals</li>
+        <li>✔ Introduction to Git and best practices</li>
+        <li>✔ Access to curated resources and hands-on mini projects</li>
+        <li>✔ Supportive community</li>
+        <li>✔ Flexible, beginner-friendly pace</li>
+        <li>✔ Certificate of Completion</li>
+      </ul>
+      <div class="payment">
+        <span>Pay with:</span>
+        <i class="fab fa-paypal"></i>
+        <i class="fab fa-google-pay"></i>
       </div>
-    </section>
+      <button class="btn buy-now" onclick="location.href='#payment-starter'"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+    </div>
+
+    <div class="course-item">
+      <h3>Basic</h3>
+      <p>(Great for those who want to level up and build a portfolio with professional support)</p>
+      <span>$20 <small>/ per month</small></span>
+      <ul>
+        <li>✔ All Starter benefits PLUS</li>
+        <li>✔ Weekly tasks</li>
+        <li>✔ Limited support</li>
+        <li>✔ Guided, project-based learning</li>
+        <li>✔ 15 curated job opportunities</li>
+        <li>✔ Code reviews and constructive feedback</li>
+        <li>✔ Application materials review</li>
+        <li>✔ Certificate of Completion</li>
+      </ul>
+      <div class="payment">
+        <span>Pay with:</span>
+        <i class="fab fa-paypal"></i>
+        <i class="fab fa-google-pay"></i>
+      </div>
+  <button class="btn buy-now"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+    </div>
+
+    <div class="course-item pro">
+      <h3>Pro</h3>
+      <p>(Perfect for serious learners aiming to accelerate their coding skills and jumpstart their career)</p>
+      <span>$30 <small>/ per month</small></span>
+      <ul>
+        <li>✔ Everything in Basic PLUS</li>
+        <li>✔ Weekly live group mentoring</li>
+        <li>✔ Personalized project guidance</li>
+        <li>✔ Weekly tasks with complete guidance</li>
+        <li>✔ Full support and mentorship</li>
+        <li>✔ Access to all resources</li>
+        <li>✔ 25 curated job opportunities</li>
+        <li>✔ Hands-on experience with 2 companies</li>
+        <li>✔ Application materials review</li>
+        <li>✔ Certificate of Completion</li>
+      </ul>
+      <div class="payment">
+        <span>Pay with:</span>
+        <i class="fab fa-paypal"></i>
+        <i class="fab fa-google-pay"></i>
+      </div>
+  <button class="btn buy-now"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+    </div>
+  </div>
+</section>
+   <section class="testimonials-section">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="testimonial-item">
+      <p>"The online course was comprehensive and very helpful for my career!"</p>
+      <strong>- Alex Johnson</strong>
+      <div class="stars">
+        ⭐⭐⭐⭐☆
+      </div>
+    </div>
+
+    <div class="testimonial-item">
+      <p>"Workshop sessions were interactive and rich in knowledge."</p>
+      <strong>- Marie Lopez</strong>
+      <div class="stars">
+        ⭐⭐⭐⭐⭐
+      </div>
+    </div>
+
+    <div class="testimonial-item">
+      <p>"Soft skills training improved my confidence at work."</p>
+      <strong>- David Peterson</strong>
+      <div class="stars">
+        ⭐⭐⭐⭐☆
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2>FAQ</h2>
+  <ul>
+    <li><strong>How can I pay?</strong> We accept Visa, Mastercard, and PayPal.</li>
+    <li><strong>Are certificates accredited?</strong> Yes, all certifications are recognized.</li>
+    <li><strong>Where are the workshops held?</strong> Mostly online, with some in-person sessions.</li>
+  </ul>
+</section>
   </main>
 
-  <footer>
-    &copy; 2025 SJA Pathway. All rights reserved.
-  </footer>
-
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>We provide professional training to help you succeed in your career.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Important Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 All rights reserved.</p>
+  </div>
+</footer>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('loaded');
