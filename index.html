@@ -1,16 +1,89 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello SJA Pathway!</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SJA Pathway - Job Search Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="main-title">Hello SJA Pathway</h1>
-  <div class="bubble"></div>
-<div class="bubble"></div>
-<div class="bubble"></div>
-<div class="bubble"></div>
-<div class="bubble"></div>
+
+  <header>
+      <div class="logo-container">
+<img
+  style="width:88px; height:88px; border-radius: 50%; object-fit: cover;"
+  src="icon.jpg"
+  alt="SJA Pathway" >
+    <h1>SJA Pathway</h1>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Empower Your Career Journey</h2>
+      <p>Discover the best resources, job openings, and skill-building opportunities tailored to help you succeed in your professional path.</p>
+      <a href="#features-section" class="cta">Get Started</a>
+    </section>
+
+    <section class="features" id="features-section">
+      <h2>Job Search</h2>
+      <article class="feature-card">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&q=60" alt="Career Guidance">
+        <div class="feature-content">
+          <h3>Career Guidance</h3>
+          <p>Access personalized advice and career counseling that help you explore various professions, understand industry demands, and align your skills with market needs. Our expert mentors and AI-powered tools assist in crafting your unique career roadmap.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=60" alt="Job Listings">
+        <div class="feature-content">
+          <h3>Job Listings</h3>
+          <p>Explore hundreds of curated job opportunities across various industries and locations. Whether you are seeking internships, part-time, or full-time roles, find positions that match your skills and aspirations with up-to-date descriptions and application details.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&q=60" alt="Skill Development">
+        <div class="feature-content">
+          <h3>Skill Development</h3>
+          <p>Boost your employability with targeted skill-building resources including online courses, workshops, and certifications in areas such as technology, communication, leadership, and more. Stay competitive and confident in your professional growth.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="details-section">
+      <h2>Why Choose SJA Pathway?</h2>
+      <div class="container">
+        <p>At SJA Pathway, we are dedicated to empowering job seekers and career changers by providing tailored resources, up-to-date job listings, and expert guidance that align with your unique career goals.</p>
+        <p>Our platform bridges the gap between skills and opportunity by offering:</p>
+        <ul>
+          <li>Comprehensive career counseling and mentorship</li>
+          <li>Access to exclusive job listings with trusted employers</li>
+          <li>Ongoing skill development programs to keep you competitive</li>
+          <li>User-friendly tools and resources to simplify your job search</li>
+        </ul>
+        <p>Join thousands of satisfied users who have advanced their careers with SJA Pathway’s proven methods and support.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 SJA Pathway. All rights reserved.
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
 </body>
 </html>
