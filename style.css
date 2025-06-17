@@ -354,7 +354,6 @@ button.btn, button.cta {
   text-align: center;
 }
 
-/* 2. حالات Hover مرتبة بنفس الترتيب */
 form button:hover {
   background: #005f8a;
 }
@@ -369,9 +368,7 @@ button.btn:hover, button.cta:hover {
   box-shadow: 0 6px 20px rgb(0 119 182 / 60%);
 }
 
-/* ======================
-   استجابات الأجهزة 
-   ====================== */
+
 @media (width <= 768px) {
   .footer-container {
     flex-direction: column;
