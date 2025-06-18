@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:css": "stylelint **/*.css"
+    "lint:css": "stylelint **/*.css",
+    "lint:html": "htmlhint **/*.html",
+    "lint": "npm run lint:css && npm run lint:html"
   },
   "repository": {
     "type": "git",
