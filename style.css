@@ -247,10 +247,9 @@ footer {
 .scan-overview-progress-bar.end-animation {
   width: 100%;
 }
-#scan-percentage-bar {
+.full-width {
   width: 100%;
 }
-
 
 form button {
   background-color: #0077b6;
