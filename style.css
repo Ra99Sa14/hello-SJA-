@@ -1,6 +1,3 @@
-/* ======================
-   إعادة تعيين القواعد العامة 
-   ====================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,11 +14,8 @@ body {
   flex-direction: column;
 }
 
-/* ======================
-   الهيكل العام 
-   ====================== */
 .training-section {
-  background-color: #f0f4f8;  
+  background-color: #f0f4f8;
   padding: 40px 20px;
   border-radius: 12px;
   max-width: 700px;
@@ -31,9 +25,6 @@ body {
   box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
 }
 
-/* ======================
-   الهيدر 
-   ====================== */
 header {
   background: #0077b6;
   color: #fff;
@@ -67,9 +58,6 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* ======================
-   الروابط والتنقل 
-   ====================== */
 nav ul {
   list-style: none;
   display: flex;
@@ -85,15 +73,15 @@ nav ul li a {
 
 .social-icons a {
   color: #caf0f8;
-  font-size: 1.4rem;       
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;              
+  width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: rgb(33 158 188 / 20%); 
-  text-decoration: none;  
+  background-color: rgb(33 158 188 / 20%);
+  text-decoration: none;
 }
 
 .footer-column ul li a {
@@ -102,9 +90,6 @@ nav ul li a {
   font-weight: 500;
 }
 
-/* ======================
-   المحتوى الرئيسي 
-   ====================== */
 main {
   max-width: 1200px;
   margin: 40px auto;
@@ -112,9 +97,6 @@ main {
   flex-grow: 1;
 }
 
-/* ======================
-   قسم البطل (Hero)
-   ====================== */
 .hero {
   background: #00b4d8;
   color: #fff;
@@ -146,12 +128,9 @@ main {
   box-shadow: 0 4px 15px rgb(144 224 239 / 60%);
 }
 
-/* ======================
-   المميزات 
-   ====================== */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-top: 50px;
 }
@@ -202,9 +181,6 @@ main {
   color: #444;
 }
 
-/* ======================
-   الفوتر 
-   ====================== */
 footer {
   background-color: #023047;
   color: #caf0f8;
@@ -263,18 +239,19 @@ footer {
   margin-top: 30px;
 }
 
-.scan-overview__progress-bar {
-    height: 4px;
-    background: #0077b6;
+.scan-overview-progress-bar {
+  height: 4px;
+  background: #0077b6;
 }
 
-.scan-overview__progress-bar.end-animation {
-    width: 100%;
+.scan-overview-progress-bar.end-animation {
+  width: 100%;
+}
+#scan-percentage-bar {
+  width: 100%;
 }
 
-/* ======================
-   الأزرار 
-   ====================== */
+
 form button {
   background-color: #0077b6;
   color: #fff;
@@ -298,7 +275,8 @@ form button {
   cursor: pointer;
 }
 
-button.btn, button.cta {
+button.btn,
+button.cta {
   background: linear-gradient(135deg, #0077b6, #90e0ef);
   color: #fff;
   padding: 15px 30px;
