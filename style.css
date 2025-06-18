@@ -1,11 +1,22 @@
+/* ======================
+   الإعدادات العامة وتحسينات الأداء
+   ====================== */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* تحسينات الأداء للصور */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: Montserrat, sans-serif;
+  font-display: swap;
   background: #f5f7fa;
   color: #333;
   line-height: 1.6;
@@ -239,17 +250,7 @@ footer {
   margin-top: 30px;
 }
 
-.scan-overview-progress-bar {
-  height: 4px;
-  background: #0077b6;
-}
 
-.scan-overview-progress-bar.end-animation {
-  width: 100%;
-}
-.full-width {
-  width: 100%;
-}
 
 form button {
   background-color: #0077b6;
@@ -288,6 +289,14 @@ button.cta {
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+button.btn:hover,
+button.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgb(0 119 182 / 50%);
 }
 
 @media (width <= 768px) {
@@ -302,7 +311,7 @@ button.cta {
 }
 
 /* ======================
-   قسم الدورات 
+   قسم الدورات
    ====================== */
 .courses-section {
   padding: 60px 20px;
@@ -386,7 +395,7 @@ button.cta {
 }
 
 /* ======================
-   قسم الشهادات 
+   قسم الشهادات
    ====================== */
 .testimonials-section {
   padding: 60px 20px;
@@ -430,12 +439,12 @@ button.cta {
 }
 
 .testimonial-item .stars {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 1.2rem;
 }
 
 /* ======================
-   قسم الأسئلة الشائعة 
+   قسم الأسئلة الشائعة
    ====================== */
 .faq-section {
   padding: 60px 20px;
@@ -466,7 +475,7 @@ button.cta {
 }
 
 /* ======================
-   قسم النشرة البريدية 
+   قسم النشرة البريدية
    ====================== */
 .newsletter {
   padding: 60px 20px;
@@ -491,7 +500,7 @@ button.cta {
 }
 
 /* ======================
-   قسم التفاصيل 
+   قسم التفاصيل
    ====================== */
 .details-section {
   background: #caf0f8;
@@ -568,7 +577,7 @@ button.cta {
 }
 
 /* ======================
-   قسم المحتوى 
+   قسم المحتوى
    ====================== */
 .content-section {
   background: #fff;
@@ -596,7 +605,7 @@ button.cta {
 }
 
 /* ======================
-   النماذج 
+   النماذج
    ====================== */
 form label {
   font-weight: 600;
@@ -624,7 +633,7 @@ form textarea:focus {
 }
 
 /* ======================
-   التكيف مع الشاشات الصغيرة 
+   التكيف مع الشاشات الصغيرة
    ====================== */
 @media (width <= 600px) {
   header {
